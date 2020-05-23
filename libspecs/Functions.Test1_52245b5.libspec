@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="Functions.Test1" type="library" format="ROBOT" generated="20200517 20:45:47">
+<version></version>
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>Created on 13-May-2020
+
+@author: Mohit</doc>
+<kw name="Addition">
+<arguments>
+<arg>a</arg>
+<arg>b</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Multiply">
+<arguments>
+<arg>a</arg>
+<arg>b</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+</keywordspec>

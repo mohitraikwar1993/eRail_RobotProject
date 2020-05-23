@@ -1,0 +1,12 @@
+{
+	
+	"HomePage" : 
+		{
+			"From_Station_id" : "txtStationFrom",
+			"To_Station_id" : "txtStationTo",
+			"Button_id" : "buttonFromTo",
+			"RLWL Remote Location_xpath" : "//a[text()='RLWL Remote Location']"
+			
+		}
+	
+}
