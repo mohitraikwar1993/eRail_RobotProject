@@ -26,6 +26,13 @@ LoginTOeRail_loginTestSuite
     ${currenturl}=    Get Location
     Log    ${currenturl}    
 
+Test Login
+    [Tags]    Smoke
+    Clear Element Text     id=txtStationFrom
+    Input Text    id=txtStationFrom    @{cityname}[0]
+    Press Keys    id=txtStationFrom    ENTER
+    ${currenturl}=    Get Location
+    Log    ${currenturl}        
 
 
     
