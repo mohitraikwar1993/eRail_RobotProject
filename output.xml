@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20200524 11:03:38.602" rpa="false">
-<suite id="s1" name="Smoke Suite" source="C:\Users\Beauty\eclipse-workspace\eRail_RobotProject\Smoke_Suite">
-<kw name="Before Smoke Suite" type="setup">
-<doc>Execution of test suite under Smoke Suite folder starts</doc>
+<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20200524 15:16:59.828" rpa="false">
+<suite id="s1" name="eRail RobotProject" source="C:\Users\Beauty\eclipse-workspace\eRail_RobotProject">
+<suite id="s1-s1" name="Regression Suite" source="C:\Users\Beauty\eclipse-workspace\eRail_RobotProject\Regression_Suite">
+<kw name="Before Regression Suite" type="setup">
+<doc>Execution of test suite under Regression Suite folder starts</doc>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>Execution of Smoke suite started</arg>
+<arg>Execution of Regression suite started</arg>
 </arguments>
-<msg timestamp="20200524 11:03:41.025" level="INFO">Execution of Smoke suite started</msg>
-<status status="PASS" starttime="20200524 11:03:41.025" endtime="20200524 11:03:41.025"></status>
+<msg timestamp="20200524 15:17:11.394" level="INFO">Execution of Regression suite started</msg>
+<status status="PASS" starttime="20200524 15:17:11.393" endtime="20200524 15:17:11.394"></status>
 </kw>
-<status status="PASS" starttime="20200524 11:03:41.025" endtime="20200524 11:03:41.025"></status>
+<status status="PASS" starttime="20200524 15:17:11.344" endtime="20200524 15:17:11.395"></status>
 </kw>
-<suite id="s1-s1" name="loginTest Smoke" source="C:\Users\Beauty\eclipse-workspace\eRail_RobotProject\Smoke_Suite\loginTest_Smoke.robot">
-<test id="s1-s1-t1" name="Test Login">
+<suite id="s1-s1-s1" name="loginTest Reg" source="C:\Users\Beauty\eclipse-workspace\eRail_RobotProject\Regression_Suite\loginTest_Reg.robot">
+<test id="s1-s1-s1-t1" name="LoginTOeRail_RegressionSuite">
 <kw name="launchApp and maximize" library="Resources_eRail" type="setup">
 <doc>method or keyword with argument</doc>
 <arguments>
@@ -26,21 +27,21 @@
 <arg>${url}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200524 11:03:41.166" level="INFO">Opening browser 'chrome' to base url 'https://erail.in/'.</msg>
-<status status="PASS" starttime="20200524 11:03:41.166" endtime="20200524 11:03:54.649"></status>
+<msg timestamp="20200524 15:17:11.602" level="INFO">Opening browser 'chrome' to base url 'https://erail.in/'.</msg>
+<status status="PASS" starttime="20200524 15:17:11.601" endtime="20200524 15:18:32.591"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200524 11:03:54.650" endtime="20200524 11:04:07.049"></status>
+<status status="PASS" starttime="20200524 15:18:32.594" endtime="20200524 15:18:46.494"></status>
 </kw>
-<status status="PASS" starttime="20200524 11:03:41.166" endtime="20200524 11:04:07.078"></status>
+<status status="PASS" starttime="20200524 15:17:11.600" endtime="20200524 15:18:46.496"></status>
 </kw>
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
 <arguments>
 <arg>id=txtStationFrom</arg>
 </arguments>
-<status status="PASS" starttime="20200524 11:04:07.115" endtime="20200524 11:04:07.337"></status>
+<status status="PASS" starttime="20200524 15:18:46.497" endtime="20200524 15:18:53.550"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -48,8 +49,8 @@
 <arg>id=txtStationFrom</arg>
 <arg>@{cityname}[0]</arg>
 </arguments>
-<msg timestamp="20200524 11:04:07.339" level="INFO">Typing text 'BhopalJn' into text field 'id=txtStationFrom'.</msg>
-<status status="PASS" starttime="20200524 11:04:07.338" endtime="20200524 11:04:08.152"></status>
+<msg timestamp="20200524 15:18:53.553" level="INFO">Typing text 'BhopalJn' into text field 'id=txtStationFrom'.</msg>
+<status status="PASS" starttime="20200524 15:18:53.551" endtime="20200524 15:19:09.588"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -57,25 +58,43 @@
 <arg>id=txtStationFrom</arg>
 <arg>ENTER</arg>
 </arguments>
-<msg timestamp="20200524 11:04:08.153" level="INFO">Sending key(s) ('ENTER',) to id=txtStationFrom element.</msg>
-<msg timestamp="20200524 11:04:08.163" level="INFO">Pressing special key ENTER to element.</msg>
-<status status="PASS" starttime="20200524 11:04:08.152" endtime="20200524 11:04:08.764"></status>
+<msg timestamp="20200524 15:19:09.705" level="INFO">Sending key(s) ('ENTER',) to id=txtStationFrom element.</msg>
+<msg timestamp="20200524 15:19:09.738" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20200524 15:19:09.589" endtime="20200524 15:19:15.032"></status>
 </kw>
-<kw name="Get Location" library="SeleniumLibrary">
-<doc>Returns the current browser window URL.</doc>
-<assign>
-<var>${currenturl}</var>
-</assign>
-<msg timestamp="20200524 11:04:08.778" level="INFO">${currenturl} = https://erail.in/</msg>
-<status status="PASS" starttime="20200524 11:04:08.767" endtime="20200524 11:04:08.778"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
 <arguments>
-<arg>${currenturl}</arg>
+<arg>id=txtStationTo</arg>
 </arguments>
-<msg timestamp="20200524 11:04:08.779" level="INFO">https://erail.in/</msg>
-<status status="PASS" starttime="20200524 11:04:08.779" endtime="20200524 11:04:08.779"></status>
+<status status="PASS" starttime="20200524 15:19:15.033" endtime="20200524 15:19:15.131"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtStationTo</arg>
+<arg>&amp;{cname}[to]</arg>
+</arguments>
+<msg timestamp="20200524 15:19:15.133" level="INFO">Typing text 'Bangalore East' into text field 'id=txtStationTo'.</msg>
+<status status="PASS" starttime="20200524 15:19:15.132" endtime="20200524 15:19:15.499"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>id=txtStationTo</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200524 15:19:15.501" level="INFO">Sending key(s) ('ENTER',) to id=txtStationTo element.</msg>
+<msg timestamp="20200524 15:19:15.510" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20200524 15:19:15.500" endtime="20200524 15:19:20.917"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=buttonFromTo</arg>
+</arguments>
+<msg timestamp="20200524 15:19:20.920" level="INFO">Clicking button 'id=buttonFromTo'.</msg>
+<status status="PASS" starttime="20200524 15:19:20.918" endtime="20200524 15:19:26.953"></status>
 </kw>
 <kw name="close browser and take screenshot" library="Resources_eRail" type="teardown">
 <doc>close the browser and take the screenshot</doc>
@@ -84,36 +103,38 @@
 <arguments>
 <arg>././snapshots/screenshot.png</arg>
 </arguments>
-<msg timestamp="20200524 11:04:09.647" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="snapshots/screenshot.png"&gt;&lt;img src="snapshots/screenshot.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200524 11:04:08.780" endtime="20200524 11:04:09.647"></status>
+<msg timestamp="20200524 15:20:12.805" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="snapshots/screenshot.png"&gt;&lt;img src="snapshots/screenshot.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200524 15:19:26.956" endtime="20200524 15:20:12.806"></status>
 </kw>
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200524 11:04:09.647" endtime="20200524 11:04:12.159"></status>
+<status status="PASS" starttime="20200524 15:20:12.807" endtime="20200524 15:20:23.225"></status>
 </kw>
-<status status="PASS" starttime="20200524 11:04:08.780" endtime="20200524 11:04:12.159"></status>
+<status status="PASS" starttime="20200524 15:19:26.954" endtime="20200524 15:20:23.228"></status>
 </kw>
+<doc>verifiying the login functionality of eRail application</doc>
 <tags>
-<tag>ALL_TC</tag>
-<tag>Smoke</tag>
+<tag>Regression</tag>
 </tags>
-<status status="PASS" starttime="20200524 11:03:41.166" endtime="20200524 11:04:12.159" critical="yes"></status>
+<status status="PASS" starttime="20200524 15:17:11.598" endtime="20200524 15:20:23.230" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200524 11:03:41.025" endtime="20200524 11:04:12.159"></status>
+<status status="PASS" starttime="20200524 15:17:11.395" endtime="20200524 15:20:23.236"></status>
 </suite>
-<kw name="After Smoke Suite" type="teardown">
-<doc>Execution of test suite under Smoke Suite folder ended</doc>
+<kw name="After Regression Suite" type="teardown">
+<doc>Execution of test suite under Regression Suite folder ended</doc>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>Execution of Smoke suite ended</arg>
+<arg>Execution of Regression suite ended</arg>
 </arguments>
-<msg timestamp="20200524 11:04:12.159" level="INFO">Execution of Smoke suite ended</msg>
-<status status="PASS" starttime="20200524 11:04:12.159" endtime="20200524 11:04:12.159"></status>
+<msg timestamp="20200524 15:20:23.797" level="INFO">Execution of Regression suite ended</msg>
+<status status="PASS" starttime="20200524 15:20:23.795" endtime="20200524 15:20:23.799"></status>
 </kw>
-<status status="PASS" starttime="20200524 11:04:12.159" endtime="20200524 11:04:12.159"></status>
+<status status="PASS" starttime="20200524 15:20:23.248" endtime="20200524 15:20:23.801"></status>
 </kw>
-<status status="PASS" starttime="20200524 11:03:38.602" endtime="20200524 11:04:12.159"></status>
+<status status="PASS" starttime="20200524 15:17:01.888" endtime="20200524 15:20:23.803"></status>
+</suite>
+<status status="PASS" starttime="20200524 15:17:01.569" endtime="20200524 15:20:23.812"></status>
 </suite>
 <statistics>
 <total>
@@ -121,12 +142,12 @@
 <stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0">ALL_TC</stat>
-<stat pass="1" fail="0">Smoke</stat>
+<stat pass="1" fail="0">Regression</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Smoke Suite">Smoke Suite</stat>
-<stat pass="1" fail="0" id="s1-s1" name="loginTest Smoke">Smoke Suite.loginTest Smoke</stat>
+<stat pass="1" fail="0" id="s1" name="eRail RobotProject">eRail RobotProject</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Regression Suite">eRail RobotProject.Regression Suite</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="loginTest Reg">eRail RobotProject.Regression Suite.loginTest Reg</stat>
 </suite>
 </statistics>
 <errors>
