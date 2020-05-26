@@ -21,7 +21,7 @@ LoginTOeRail_loginTestSuite
     [Tags]    Smoke    Sanity
 
     Clear Element Text     id=txtStationFrom
-    Input Text    id=txtStationFrom    @{cityname}[0]
+    Input Text    id=txtStationFrom    ${cityname}[0]
     Press Keys    id=txtStationFrom    ENTER
     ${currenturl}=    Get Location
     Log    ${currenturl}    
@@ -29,7 +29,7 @@ LoginTOeRail_loginTestSuite
 Test Login
     [Tags]    Smoke
     Clear Element Text     id=txtStationFrom
-    Input Text    id=txtStationFrom    @{cityname}[0]
+    Input Text    id=txtStationFrom    ${cityname}[0]
     Press Keys    id=txtStationFrom    ENTER
     ${currenturl}=    Get Location
     Log    ${currenturl}        

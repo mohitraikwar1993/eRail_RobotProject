@@ -20,10 +20,10 @@ LoginTOeRail_RegressionSuite
     [Tags]    Regression
     
     Clear Element Text     id=txtStationFrom
-    Input Text    id=txtStationFrom    @{cityname}[0]
+    Input Text    id=txtStationFrom    ${cityname}[0]
     Press Keys    id=txtStationFrom    ENTER 
     Clear Element Text     id=txtStationTo
-    Input Text    id=txtStationTo    &{cname}[to]
+    Input Text    id=txtStationTo    ${cname}[to]
     Press Keys    id=txtStationTo    ENTER
     Click Button    id=buttonFromTo    
     
